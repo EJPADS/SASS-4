@@ -1,0 +1,26 @@
+@use '../abstract' as *;
+.btn {
+    padding: 1.5rem 2.5rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    font-family: "clashdisplay-regular";
+    @include flex(center, center);
+    line-height: 1;
+    transition: .5s ease;
+   
+    $colors: (
+        "accent" : $clr-accent,
+        "light" : $clr-light,
+        );
+
+        @each $key, $val in $colors {
+    
+            &-#{$key} {
+                background: #{$val};
+                &:hover {
+                    background: #{$val};
+                    }
+                }
+            }
+        }
+

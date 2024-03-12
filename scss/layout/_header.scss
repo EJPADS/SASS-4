@@ -1,0 +1,68 @@
+@use '../abstract' as *;
+
+.header {
+    &__wrapper {
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        @include flex(space-between, center);
+       #sign {
+            @include mediaQuery {
+                width: 20%;
+            }
+            width: 22%;
+            padding: 1rem .2rem;
+            background: $clr-accent;
+            transition: .5s ease;
+            color: $clr-light;
+            border: none;
+            border-radius: 5rem;
+            font-size: 1.5rem;
+            &:hover {
+                background: transparent;
+                color: $clr-primary;
+                border: 1px solid $clr-accent;
+            }
+        }
+
+        ul.open {
+            visibility: visible;
+            opacity: 1;
+        }
+        ul {
+            @include mediaQuery {
+                position: static;
+                background-color: unset;
+                padding: unset;
+                width: auto;
+                height: unset;
+                flex-direction: row;
+                visibility: visible;
+                opacity: 1;
+                li {
+                    a {
+                    font-size: 1.6rem;
+                    }
+                }
+            }
+            position: fixed;
+            top: 5rem;
+            left:0;
+            width: 100%;
+            height: 100vh;
+            z-index: 99999;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30%;
+            visibility: hidden;
+            opacity: 0;
+            transition: .5s ease;
+            li {
+             text-align: center;
+             a {
+                font-size: 1.5rem;
+                color: $clr-primary;
+             }
+            }
+        }
+    }
+}
