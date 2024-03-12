@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="stylesheet" href="./scss/main.css">
 </head>
 <body>
 
@@ -15,124 +15,175 @@
                 <header class="header">
                     <div class="container">
                         <div class="header__wrapper flex justify-between">
-                            <a href="" class="text-accent">GYM</a>
-                            <ul class="flex gap-2" id="menu">
+                            <a href="" class="text-accent fs-4">GYM</a>
+                            <ul class="flex gap-3" id="menu">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Class</a></li>
                                 <li><a href="#">Trainers</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
-                            <button id="sign">Sign up</button>
+                            <button>Sign up</button>
                         </div>
                     </div>
                 </header>
-                <div class="banner__content">
-                    <h3>The Best Fitness Club in Town</h3>
+                
+                <div class="banner__content flex justify-between">
+                    <div>
+                    <h3>The Best Fitness Club in the Town</h3>
                     <h1>Improve your Fitness Level for the Better</h1>
-                    <button id="first" class="mb-1">BE A MEMBER</button>
-                    <button id="second" class="mb-1"><i class="fa-regular fa-circle-play"></i>LEARN MORE</button>
+                    </div>
+                    <div>
+                    <button class="mb-1">BE A MEMBER</button>
+                    <button class="mb-1"><i class="fa-regular fa-circle-play"></i>LEARN MORE</button>
+                    </div>
                 </div>
-                <div class="banner__img">
+                <div class="banner__img flex gap-2">
                     <div class="banner__img__first">
-                        <img src="https://via.placeholder.com/300x200" alt="">
+                        <img src="https://via.placeholder.com/400x200" alt="">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit delectus odio pariatur cumque nobis at esse, modi praesentium quibusdam labore rerum beatae quam dolorum non nulla sint blanditiis ratione! Natus, deserunt?</p>
                     </div>
                     <div class="banner__img__second">
-                        <img src="https://via.placeholder.com/400x200" alt="">
+                        <img src="https://via.placeholder.com/700x300" alt="">
                     </div>
                 </div>
+
+
             </div>
         </div>
     </section>
 
-    <section class="second">
+    <section class="top mb-10">
         <div class="container">
-            <div class="second__wrapper">
-                <div class="second__top">
-                    <div class="second__stats">
-                        <div class="second__list">
-                            <h3>500+</h3>
-                            <h4>Happy Members</h4>
-                            <p>Our community is growing fast!</p>
-                        </div>
-                        <div class="second__list">
-                            <h3>30+</h3>
-                            <h4>Weekly Classes</h4>
-                            <p>Pic from various workouts</p>
-                        </div>
-                        <div class="second__list">
-                            <h3>10</h3>
-                            <h4>Certified Trainers</h4>
-                            <p>Guidance at every step.</p>
-                        </div>
-                        <div class="second__list">
-                            <h3>99%</h3>
-                            <h4>Customer Satisfaction</h4>
-                            <p>We ensure your progress satisfaction</p>
-                        </div>
+            <div class="top__wrapper">
+                <div class="top__list">
+                    <div class="top__stats">
+                        <h3>500+</h3>
+                        <h4>Happy Members</h4>
+                        <p>Our community is growing fast!</p>
                     </div>
-                </div>
-
-                <div class="second__bottom">
-                    <div class="container">
-                        <div class="second__block">
-                            <h2>Why Choose Us</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus necessitatibus placeat nostrum quasi dicta sunt reprehenderit sequi aliquid.</p>
-                        </div>
-                        <div class="second__content">
-                            <div class="second__services">
-                                <div class="second__service">
-                                    <div class="second__service__icon"><i class="fa-solid fa-dumbbell"></i></div>
-                                    <h3>Facility Amenities</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam itaque autem laboriosam! Deleniti, iusto!</p>
-                                </div>
-                                <div class="second__service">
-                                    <div class="second__service__icon"><i class="fa-solid fa-dumbbell"></i></div>
-                                    <h3>Membership Cost</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam itaque autem laboriosam! Deleniti, iusto!</p>
-                                </div>
-                                <div class="second__service">
-                                    <div class="second__service__icon"><i class="fa-solid fa-dumbbell"></i></div>
-                                    <h3>Trainer Qualifications</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam itaque autem laboriosam! Deleniti, iusto!</p>
-                                </div>
-                                <div class="second__service">
-                                    <div class="second__service__icon"><i class="fa-solid fa-dumbbell"></i></div>
-                                    <h3>Operating Hours</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam itaque autem laboriosam! Deleniti, iusto!</p>
-                                </div>
-                            </div>
-                            <div class="second__img">
-                                <img src="https://via.placeholder.com/400x200" alt="">
-                            </div>
-                        </div>
+                    <div class="top__stats">
+                        <h3>30+</h3>
+                        <h4>Weekly Classes</h4>
+                        <p>Pic from various workouts</p>
+                    </div>
+                    <div class="top__stats">
+                        <h3>10</h3>
+                        <h4>Certified Trainers</h4>
+                        <p>Guidance at every step.</p>
+                    </div>
+                    <div class="top__stats">
+                        <h3>99%</h3>
+                        <h4>Customer Satisfaction</h4>
+                        <p>We ensure your progress satisfaction</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="third">
+    <div class="block text-center">
+        <h2>Why Choose Us</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus necessitatibus placeat nostrum quasi dicta sunt reprehenderit sequi aliquid.</p>
+    </div>
+
+    <section class="second mb-10">
+       
+            <div class="second__wrapper">
+                <div class="second__content">
+                    <div class="second__services">
+                        <div class="second__service">
+                            <div class="second__service__icon"><i class="fa-solid fa-dumbbell"></i></div>
+                            <h3>Facility Amenities</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam itaque autem laboriosam! Deleniti, iusto!</p>
+                        </div>
+                        <div class="second__service">
+                            <div class="second__service__icon"><i class="fa-solid fa-dumbbell"></i></div>
+                            <h3>Membership Cost</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam itaque autem laboriosam! Deleniti, iusto!</p>
+                        </div>
+                        <div class="second__service">
+                            <div class="second__service__icon"><i class="fa-solid fa-dumbbell"></i></div>
+                            <h3>Trainer Qualifications</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam itaque autem laboriosam! Deleniti, iusto!</p>
+                        </div>
+                        <div class="second__service">
+                            <div class="second__service__icon"><i class="fa-solid fa-dumbbell"></i></div>
+                            <h3>Operating Hours</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam itaque autem laboriosam! Deleniti, iusto!</p>
+                        </div>
+                    </div>
+                    <div class="second__img">
+                        <img src="https://via.placeholder.com/400x409" alt="">
+                    </div>
+                </div>
+            </div>
+
+        
+    </section>
+
+    <div class="block text-center">
+        <h2>Meet Our Trainers</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus necessitatibus placeat nostrum quasi dicta sunt reprehenderit sequi aliquid.</p>
+    </div>
+
+    <section class="third mb-10">
         <div class="container">
             <div class="third__wrapper">
-                <div class="third__block">
-                    <h2>Meet Our Trainers</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus necessitatibus placeat nostrum quasi dicta sunt reprehenderit sequi aliquid.</p>
-                </div>
                 <div class="third__images">
                     <div class="third__img">
-                        <img src="https://via.placeholder.com/300x300" alt="">
+                        <img src="https://via.placeholder.com/500x600" alt="">
                         <h3>Esther Howard</h3>
                     </div>
                     <div class="third__img">
-                        <img src="https://via.placeholder.com/300x300" alt="">
+                        <img src="https://via.placeholder.com/500x600" alt="">
                         <h3>Jenny Wilson</h3>
                     </div>
                     <div class="third__img">
-                        <img src="https://via.placeholder.com/300x300" alt="">
+                        <img src="https://via.placeholder.com/500x600" alt="">
                         <h3>Ralph Edwards</h3>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom">
+        <div class="container">
+            <div class="bottom__wrapper">
+                <div class="bottom__content">
+                    <div class="bottom__left">
+                        <h3>DON'T TAKE OUR WORDS</h3>
+                        <h2>Listen from our Happy Clients</h2>
+                        <div class="bottom__icons flex gap-2">
+                            <div class="bottom__icon"><i class="fa-solid fa-arrow-left"></i></div>
+                            <div class="bottom__icon"><i class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="bottom__right">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <div>
+                        
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam minima incidunt sed dolorum repudiandae atque! Voluptatibus nam expedita magnam. Suscipit corrupti dolores, esse reiciendis, labore odit praesentium distinctio laudantium recusandae, animi sed? Dolor, hic voluptates!"</p>
+                        </div>
+                        <div class="bottom__athlete flex gap-2">
+                        <img src="https://via.placeholder.com/100x100" alt="">
+                        <div>
+                        <h3>Eleanor Pena</h3>
+                        <h4>Athletes</h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta__wrapper">
+                <h3>Join the Gymnastic family</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde minus harum impedit velit culpa odit obcaecati eius.</p>
+                <button>BE A MEMBER</button>
             </div>
         </div>
     </section>
