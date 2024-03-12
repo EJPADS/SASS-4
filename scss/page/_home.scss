@@ -5,52 +5,37 @@
 @use '../vendor' as *;
 
 .banner {
-    border-radius: 3rem;
+    border-radius: 7rem;
     background: $clr-light;
     &__wrapper {
             min-height: 90rem;
         }
     &__content {
+        @include grid(2, 1rem);
+        width: 100%;
         h3 {
             text-transform: uppercase;
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: $clr-primary;
+            opacity: .7;
         }
         h1 {
             text-transform: uppercase;
-            font-size: 3rem;
-             color: $clr-primary;
+            font-size: 8rem;
+            color: $clr-primary;
+            font-weight: 700rem;
+            width: 65rem;
         }
-        #first {
-            @include mediaQuery {
-                width: 20%;
-            }
-            width: 30%;
-            padding: 1rem .2rem;
+        button {
+            width: 45%;
+            padding: 2rem .5rem;
             background: $clr-accent;
             transition: .5s ease;
             color: $clr-light;
             border: none;
             border-radius: 5rem;
-            font-size: 1.2rem;
-            &:hover {
-                background: transparent;
-                color: $clr-primary;
-                border: 1px solid $clr-accent;
-            }
-        }
-        #second {
-            @include mediaQuery {
-                width: 20%;
-            }
-            width: 32%;
-            padding: 1rem .2rem;
-            background: $clr-accent;
-            transition: .5s ease;
-            color: $clr-light;
-            border: none;
-            border-radius: 5rem;
-            font-size: 1.2rem;
+            font-size: 2rem;
+            display: block;
             &:hover {
                 background: transparent;
                 color: $clr-primary;
@@ -66,7 +51,7 @@
             p {
                 color: $clr-primary;
                 text-align: left;
-                width: 30rem;
+                width: 40rem;
             }
         }
         &__second {
@@ -76,51 +61,138 @@
         }
     }
 }
+.top {
+    border-radius: 7rem;
+    background: $clr-secondary;
+    padding: 1rem 0;
+
+    &__list {
+        @include grid(4, 4rem);
+        justify-content: center;
+    }
+
+    &__stats {
+       
+        h3 {
+            font-size: 4rem;
+        }
+    }
+}
+
+.block {
+    h2 {
+        font-size: 4rem;
+    }
+}
 
 .second {
-    min-height: 155rem;
-
-    &__block {
-        text-align: center;
-    }
-    &__top {
-        background: $clr-secondary;
-        border-radius: 3rem;
-    }
-    
-    &__stats {
-        @include grid(1);
-    }
-
+    border-radius: 7rem;
+    background: $clr-secondary;
     &__content {
-        background: $clr-secondary;
-        border-radius: 3rem;
+        @include grid(2, 5rem);
+    }
+    &__services {
+        @include grid(2);
     }
 
     &__img {
         img {
-            border-bottom-right-radius: 3rem;
-            border-bottom-left-radius: 3rem;
+            border-end-end-radius: 3rem;
+            border-start-end-radius: 3rem;
+            
         }
     }
 
     &__service {
         &__icon {
-            padding:  0;
+            padding: .8rem 2rem;
             background: $clr-accent;
-            border-radius: 100rem;
+            border-radius: 50%;
             width: 7%;
             border: 1px solid $clr-light;
+            text-align: center;
             i {
-                
+               font-size: 2rem; 
             }
         }
     }
 }
 
 .third {
-    &__block {
-        text-align: center;
+    &__images {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        justify-content: space-evenly;
     }
 
+    &__img {
+        overflow: hidden;
+        position: relative;
+        img {
+            border-radius: 5rem;
+        }
+        h4 {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: $clr-primary;
+        }
+    }
 }
+
+.bottom {
+    border-radius: 7rem;
+    background: $clr-secondary;
+    padding: 2rem 0;
+
+    &__left {
+        width: 90%;
+        h3 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 4rem;
+            width: 75%;
+        }
+    }
+
+    &__right {
+        i {
+            font-size: 7rem;
+            color: gray;
+        }
+        img {
+            border-radius: 50%;
+        }
+        p {
+            margin-left: 8rem;
+        }
+    }
+
+    &__athlete {
+        img {
+            margin-left: 8rem;
+        }
+    }
+
+    &__content {
+        @include unevenGrid(.7fr 1.1fr)
+    }
+
+    &__icon {
+        padding: .8rem 2rem;
+        background: $clr-accent;
+        border-radius: 50%;
+        width: 7%;
+        border: none;
+        
+        i {
+            font-size: 2rem; 
+            color: $clr-light;
+           
+        }
+    }
+}
+
